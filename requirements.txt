@@ -1,10 +1,27 @@
-# Paquete local fast_graphrag + dependencias del pyproject.toml
-# Render / producción: pip install -r requirements.txt
-.
+# Pre-compiled wheels para Render
+igraph==0.11.6
+scipy==1.14.1
+scikit-learn==1.5.2
+hnswlib==0.8.0
 
-# API web (no vienen en el paquete base)
+# Resto de dependencias desde pyproject.toml
+xxhash>=3.5.0
+pydantic>=2.9.2
+tenacity>=9.0.0
+openai>=1.52.1
+scipy-stubs>=1.14.1.5
+instructor>=1.6.3
+requests>=2.32.3
+python-dotenv>=1.0.1
+tiktoken>=0.8.0
+aiolimiter>=1.1.0
+google-genai>=1.3.0
+vertexai>=1.71.1
+sentencepiece>=0.2.0
+json-repair>=0.39.1
+voyageai>=0.3.2
+
+# Web API
 fastapi>=0.115.0
 uvicorn[standard]>=0.30.0
-
-# Ingesta PDF (opcional en el servicio web; útil si ejecutas run_quickstart en el mismo entorno)
 pymupdf>=1.24.0
